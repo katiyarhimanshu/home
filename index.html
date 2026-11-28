@@ -447,47 +447,11 @@ for more stuff to follow in the days to come. </p>
   </div>
 </section>
 
-<section class="blogs">
+<section id="blogs">
   <div class="wrap">
     <h2><em>My Blogs</em><br></h2>
     <p>This page is under construction</p>
   </div>
 </section>
 </main>
-
-<div class="fpill" role="region" aria-label="Vote"><span class="dot"></span><span class="t"><b>Google Citations</b><a href="https://katiyarhimanshu.github.io/home/#vote">How to see→</a></span><a class="go vote-link" href="https://scholar.google.com/citations?user=JvAtCpMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Know Google Citations ↗</a></div>
-
-<div class="toast" id="toast" role="status"></div>
-
-<script>
-/* ===== Fill these in ===== */
-const VOTE_URL = "https://scholar.google.com/citations?user=JvAtCpMAAAAJ&hl=en";      // official IEEE ballot link, e.g. https://...
-const SITE_URL = "https://katiyarhimanshu.github.io/home/";      // public link of this page once shared
-/* ========================= */
-
-
-try{const end=new Date('2026-12-08T23:59:59+05:30');const d=Math.ceil((end-new Date())/864e5);
-const el=document.getElementById('daysleft');
-if(d>1)el.innerHTML=' · <b>'+d+' days left</b>';else if(d===1)el.innerHTML=' · <b>last day</b>';
-else{document.querySelector('.strip').style.display='none';document.querySelector('.fpill').style.display='none';}}catch(e){}
-
-const mb=document.getElementById('menubtn'),nl=document.getElementById('navlinks');
-mb.onclick=()=>{const o=nl.classList.toggle('open');mb.textContent=o?'✕':'☰';mb.setAttribute('aria-expanded',o)};
-nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mb.textContent='☰';mb.setAttribute('aria-expanded',false)}));
-const pageUrl = SITE_URL || location.href.split('#')[0];
-if (VOTE_URL) document.querySelectorAll('.vote-link').forEach(a => { a.href = VOTE_URL; a.target = "_blank"; a.rel = "noopener"; });
-
-const msg = "Please vote for Dr. Himanshu Katiyar (SMIEEE, Chair, IEEE MP Section) for IEEE India Council Chair-Elect 2027. Voting closes 8 December. Details: " + pageUrl;
-document.getElementById('sh-wa').href = "https://wa.me/?text=" + encodeURIComponent(msg);
-document.getElementById('sh-li').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(pageUrl);
-document.getElementById('sh-em').href = "mailto:?subject=" + encodeURIComponent("IEEE India Council Chair-Elect 2027 — Prof. G S Tomar") + "&body=" + encodeURIComponent(msg);
-['sh-wa','sh-li'].forEach(id => { const a = document.getElementById(id); a.target = "_blank"; a.rel = "noopener"; });
-
-function toast(t){ const el = document.getElementById('toast'); el.textContent = t; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'), 2200); }
-async function copy(text, ok){ try { await navigator.clipboard.writeText(text); toast(ok); } catch(e){ toast("Couldn't copy — please copy manually"); } }
-document.getElementById('sh-copy').onclick = () => copy(pageUrl, "Link copied");
-document.getElementById('remind').onclick = () => copy(msg, "Reminder message copied");
-</script>
-
-
 </body></html>
