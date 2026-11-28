@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UAV-Assisted Wireless Communication | Dr. Himanshu Katiyar</title>
+  <style>
+:root {
+  --primary: #142b4a;
+  --accent: #2875b9;
+  --bg: #f7f9fc;
+  --text: #334155;
+  --muted: #64748b;
+  --border: #e5eaf1;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+}
+header.site-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 20px 24px;
+  border-bottom: 3px solid var(--accent);
+}
+header.site-header .nav-wrap {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+header.site-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+header.site-header .brand {
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+header.site-header .back-link {
+  font-size: 14px;
+  background: rgba(255,255,255,0.12);
+  padding: 7px 14px;
+  border-radius: 6px;
+}
+header.site-header .back-link:hover {
+  background: var(--accent);
+}
+main.article-wrap {
+  max-width: 820px;
+  margin: 40px auto 60px;
+  background: #fff;
+  padding: 45px 50px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 28px rgba(20, 43, 74, 0.06);
+}
+.meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.badge {
+  background: #e8f2fc;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+h1 {
+  color: var(--primary);
+  font-size: 32px;
+  line-height: 1.3;
+  margin: 10px 0 18px;
+}
+.lead {
+  font-size: 18px;
+  color: #475569;
+  border-left: 4px solid var(--accent);
+  padding-left: 16px;
+  margin: 22px 0 30px;
+}
+h2 {
+  color: var(--primary);
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+p { margin: 0 0 18px; font-size: 16px; }
+ul, ol { margin: 0 0 20px 22px; }
+li { margin-bottom: 8px; }
+.callout {
+  background: #f1f6fb;
+  border: 1px solid #d5e5f5;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 26px 0;
+}
+.callout strong { color: var(--primary); }
+.author-box {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.author-box .name {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 16px;
+}
+.author-box .role {
+  color: var(--muted);
+  font-size: 14px;
+}
+footer.site-footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  font-size: 14px;
+}
+@media (max-width: 650px) {
+  main.article-wrap {
+    margin: 20px 14px 40px;
+    padding: 28px 22px;
+  }
+  h1 { font-size: 25px; }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html#blogs" class="brand">Dr. Himanshu Katiyar &middot; Engineering Blog</a>
+      <a href="../index.html#blogs" class="back-link">&larr; Back to All Blogs</a>
+    </div>
+  </header>
+
+  <main class="article-wrap">
+    <div class="meta-bar">
+      <span class="badge">🛸 Emerging Technologies</span>
+      <span>November 2026</span>
+      <span>&bull;</span>
+      <span>5 min read</span>
+    </div>
+
+    <h1>UAV-Assisted Wireless Communication</h1>
+    <p class="lead">Unmanned Aerial Vehicles (UAVs) are evolving from aerial cameras into agile flying base stations—delivering on-demand connectivity where terrestrial towers cannot reach.</p>
+
+    
+<h2>Why Take Base Stations Airborne?</h2>
+<p>Terrestrial cellular towers are fixed infrastructure: expensive to deploy in rugged terrain and vulnerable during natural disasters such as floods, earthquakes, or landslides. UAV-mounted transceivers overcome these limitations by offering rapid, three-dimensional deployment and high-probability Line-of-Sight (LoS) air-to-ground links.</p>
+
+<h2>Primary Use Cases in 5G and 6G</h2>
+<ul>
+  <li><strong>Emergency & Disaster Recovery Networks:</strong> Within minutes of terrestrial network failure, tethered or autonomous drone swarms can restore emergency voice, SMS, and situational telemetry for first responders.</li>
+  <li><strong>Hotspot Capacity Offloading:</strong> During temporary mass gatherings, festivals, or sporting events, aerial small cells relieve congestion on ground macrocells without permanent capital expenditure.</li>
+  <li><strong>IoT Data Harvesting in Remote Areas:</strong> UAVs act as mobile data mules, flying over agricultural fields, forest reserves, or remote sensor grids to collect low-power sensor transmissions efficiently.</li>
+  <li><strong>Aerial IRS & Relays:</strong> Carrying lightweight Intelligent Reflecting Surfaces or mmWave relays enables drones to bridge blockages in dense urban canyons.</li>
+</ul>
+
+<div class="callout">
+  <strong>Key Engineering Trade-off:</strong> Jointly optimizing 3D flight trajectory, transmit power, and propulsion energy consumption is essential, as onboard battery capacity remains the primary constraint on flight endurance.
+</div>
+
+<h2>Future Direction</h2>
+<p>Integrating AI-driven autonomous path planning with non-terrestrial satellite networks (NTN) will make UAVs a vital middle layer in seamless space-air-ground integrated networks (SAGIN).</p>
+
+
+    <div class="author-box">
+      <span class="name">Dr. Himanshu Katiyar</span>
+      <span class="role">Associate Professor, Department of Electronics Engineering, Rajkiya Engineering College Sonbhadra &middot; IEEE Senior Member</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Dr. Himanshu Katiyar. All rights reserved.
+  </footer>
+</body>
+</html>
