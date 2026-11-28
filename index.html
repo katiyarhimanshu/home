@@ -264,7 +264,6 @@ for more stuff to follow in the days to come. </p>
   <div class="wrap">
     <span class="kicker">Ph.D. Guidence</span>
     <h2>Ph.D. Guidence</h2>
-    <div class="datebox"><b class="vote-close">25 Dec 2026</b><span>Last Upate</span></div>
     <ol class="steps">
       <li><b>Suryakant Pathak</b>Performance Analysis of Wireless Network with Diversity Combining Technique (BBD University Lucknow)</li>
       <li><b>Dharm Raj</b>Performance Analysis of Wireless Network in α-μ Fading Channel (BBD University Lucknow)</li>
@@ -283,6 +282,7 @@ for more stuff to follow in the days to come. </p>
   <div class="wrap">
     <span class="kicker">Publications</span>
     <h2>Selected Publications</h2>
+	<div class="datebox"><b class="vote-close">25 Dec 2026</b><span>Last Upate</span></div>
     <details>
       <summary><strong>Himanshu Katiyar</strong> and R. Bhattacharjee, "Performance of two-hop regenerative relay network under correlated nakagami-m fading at multi-antenna relay," in IEEE Communications Letters, vol. 13, no. 11, pp. 820-822, November 2009</summary><p>Performance of cooperative relaying employing infrastructure based fixed relays having multiple antennas has been investigated. Here, both relay and destination perform maximal ratio combining combining of the signals. Closed form expressions for outage probability and bit error rate have been derived for Nakagami-m fading channels, with integer values of m. The effect of fading correlation among relay antennas and relay positioning on the system performance have also been studied.</p>
     </details>
@@ -447,11 +447,216 @@ for more stuff to follow in the days to come. </p>
   </div>
 </section>
 
+
 <section id="blogs">
   <div class="wrap">
     <h2><em>My Blogs</em><br></h2>
-    <p>This page is under construction</p>
+    <p class="blog-intro">
+      Sharing ideas, knowledge, research insights and experiences
+      in Electronics Engineering, Wireless Communication and Emerging Technologies.
+    </p>
+
+    <div class="blog-grid">
+
+      <!-- Blog 1 -->
+      <article class="blog-card">
+        <div class="blog-icon">📡</div>
+        <span class="blog-category">Wireless Communication</span>
+        <h3>5G and Beyond: The Future of Wireless Communication</h3>
+        <p>
+          An overview of 5G technologies, emerging 6G networks,
+          massive MIMO, intelligent reflecting surfaces and next-generation
+          wireless communication systems.
+        </p>
+        <a href="#" class="blog-link">Read More →</a>
+      </article>
+
+      <!-- Blog 2 -->
+      <article class="blog-card">
+        <div class="blog-icon">🚀</div>
+        <span class="blog-category">Research & Innovation</span>
+        <h3>Intelligent Reflecting Surfaces for 6G Networks</h3>
+        <p>
+          Exploring how intelligent reflecting surfaces can improve
+          coverage, energy efficiency and communication reliability
+          in future wireless networks.
+        </p>
+        <a href="#" class="blog-link">Read More →</a>
+      </article>
+
+      <!-- Blog 3 -->
+      <article class="blog-card">
+        <div class="blog-icon">⛏️</div>
+        <span class="blog-category">Internet of Things</span>
+        <h3>IoT Applications in Smart Mining</h3>
+        <p>
+          Understanding the role of IoT sensors, wireless communication
+          and intelligent monitoring systems in improving underground
+          mine safety and operational efficiency.
+        </p>
+        <a href="#" class="blog-link">Read More →</a>
+      </article>
+
+      <!-- Blog 4 -->
+      <article class="blog-card">
+        <div class="blog-icon">🛸</div>
+        <span class="blog-category">Emerging Technologies</span>
+        <h3>UAV-Assisted Wireless Communication</h3>
+        <p>
+          Discovering the use of unmanned aerial vehicles in providing
+          flexible wireless coverage, disaster communication and
+          5G/6G network connectivity.
+        </p>
+        <a href="#" class="blog-link">Read More →</a>
+      </article>
+
+      <!-- Blog 5 -->
+      <article class="blog-card">
+        <div class="blog-icon">🔬</div>
+        <span class="blog-category">SDR & Communication Lab</span>
+        <h3>Learning Wireless Communication with USRP and GNU Radio</h3>
+        <p>
+          A practical introduction to software-defined radio,
+          USRP hardware, GNU Radio flowgraphs and hands-on
+          wireless communication experiments.
+        </p>
+        <a href="#" class="blog-link">Read More →</a>
+      </article>
+
+      <!-- Blog 6 -->
+      <article class="blog-card">
+        <div class="blog-icon">🎓</div>
+        <span class="blog-category">Teaching & Learning</span>
+        <h3>Connecting Classroom Learning with Research</h3>
+        <p>
+          Thoughts on engineering education, project-based learning,
+          research activities and motivating students to develop
+          innovative engineering solutions.
+        </p>
+        <a href="#" class="blog-link">Read More →</a>
+      </article>
+
+    </div>
   </div>
 </section>
+
+<style>
+#blogs {
+  padding: 75px 20px;
+  background: #f7f9fc;
+}
+
+#blogs .wrap {
+  max-width: 1150px;
+  margin: auto;
+}
+
+#blogs h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #142b4a;
+  margin-bottom: 15px;
+}
+
+.blog-intro {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.blog-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e5eaf1;
+  box-shadow: 0 5px 20px rgba(20, 43, 74, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blog-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(20, 43, 74, 0.12);
+  border-color: #2d75b9;
+}
+
+.blog-icon {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+.blog-category {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2875b9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.blog-card h3 {
+  color: #142b4a;
+  font-size: 19px;
+  line-height: 1.45;
+  margin: 0 0 12px;
+}
+
+.blog-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 20px;
+}
+
+.blog-link {
+  margin-top: auto;
+  color: #2875b9;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+  color: #142b4a;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #blogs {
+    padding: 50px 15px;
+  }
+
+  #blogs h2 {
+    font-size: 29px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card {
+    padding: 23px;
+  }
+}
+</style>
+
 </main>
 </body></html>
